@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Le Thao Nhi | Study Abroad Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-100">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="font-bold text-xl tracking-tight">
+        Thao Nhi<span class="text-red-600">.</span>
+      </a>
+      <div class="hidden md:flex gap-8 text-sm font-medium">
+        <a href="#about" class="hover:text-red-600 transition">About</a>
+        <a href="#education" class="hover:text-red-600 transition">Education</a>
+        <a href="#projects" class="hover:text-red-600 transition">Research</a>
+        <a href="#why-china" class="hover:text-red-600 transition">Why China</a>
+        <a href="#contact" class="hover:text-red-600 transition">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="min-h-screen flex items-center pt-20">
+    <div class="max-w-5xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <p class="text-red-600 font-medium mb-3">Hello, I'm</p>
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-2">
+          Le Thao Nhi
+        </h1>
+        <p class="text-lg text-gray-500 mb-4">黎草儿</p>
+        <p class="text-xl text-gray-600 mb-6">
+          Freshman in <span class="font-semibold text-gray-800">International Economics & Trade</span><br>
+          Foreign Trade University (FTU)<br>
+          Preparing for <span class="text-red-600 font-semibold">Study Abroad in China</span>
+        </p>
+        <div class="flex flex-wrap gap-3 mb-8">
+          <span class="px-3 py-1 bg-red-50 text-red-700 text-sm rounded-full font-medium">HSK 5</span>
+          <span class="px-3 py-1 bg-red-50 text-red-700 text-sm rounded-full font-medium">CSCA (Math:..-Humanities Chinese:...)</span>
+          <span class="px-3 py-1 bg-orange-50 text-orange-700 text-sm rounded-full font-medium">IELTS 8.0</span>
+          <span class="px-3 py-1 bg-amber-50 text-amber-700 text-sm rounded-full font-medium">SAT 1530</span>
+          <span class="px-3 py-1 bg-rose-50 text-rose-700 text-sm rounded-full font-medium">GPA 9.38/10</span>
+        </div>
+        <div class="flex gap-4">
+          <a href="#contact" class="px-6 py-3 bg-red-600 text-white rounded-lg font-medium hover:bg-red-700 transition">
+            Contact Me
+          </a>
+          <a href="#" class="px-6 py-3 border border-gray-300 rounded-lg font-medium hover:border-gray-400 transition">
+            Download CV
+          </a>
+        </div>
+      </div>
+
+      <!-- ========== CHỖ CHÈN ẢNH CHÂN DUNG ========== -->
+      <div class="flex justify-center">
+        <div class="w-72 h-72 md:w-80 md:h-80 rounded-2xl overflow-hidden shadow-xl">
+          <!-- Thay đường dẫn ảnh của bạn vào đây -->
+          <img 
+            src="https://scontent.fsgn2-6.fna.fbcdn.net/v/t1.15752-9/645342577_1480157190451824_8697777033533072688_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1619&ctp=s1080x1619&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeE-iYKBU0OVTIjLe8pUXpj7nRwMyyCHwMmdHAzLIIfAyZwegcfKlL8soA3wxUkYyi-mYnx32wL5qzHw_5A7dMT1&_nc_ohc=ofQXw5abjnMQ7kNvwEHcrDL&_nc_oc=AdrLho9kbGMHRlHrmYH1YEXDKMhh018kzwToi1m_xeVKdPVXtLP_P8r9kM3S4nk13gQ4tyVcVK7bKO_J64OTt7Lb&_nc_zt=23&_nc_ht=scontent.fsgn2-6.fna&_nc_ss=7b2a8&oh=03_Q7cD6gFaZTqnNpkIylmTAakrF22Ptb3PexFib6uNR9TEwogEXA&oe=6AFC5F1F" 
+            alt="Le Thao Nhi" 
+            class="w-full h-full object-cover"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          >
+          <!-- Fallback nếu chưa có ảnh -->
+          <div class="w-full h-full bg-gradient-to-br from-red-100 to-orange-100 flex items-center justify-center" style="display: none;">
+            <div class="text-center">
+              <div class="w-32 h-32 mx-auto rounded-full bg-white shadow-inner flex items-center justify-center mb-4">
+                <i class="fa-solid fa-user text-5xl text-gray-300"></i>
+              </div>
+              <p class="text-sm text-gray-500">Profile Photo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-10">About Me</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="md:col-span-2 space-y-4 text-gray-600 leading-relaxed">
+          <p>
+            I am a first-year student majoring in International Economics and Trade at Foreign Trade University (FTU), Vietnam. 
+            My academic interests lie at the intersection of international trade, agricultural economics, and China–Vietnam economic relations.
+          </p>
+          <p>
+            Through independent research, I have examined the structural challenges facing Vietnam’s agricultural exports to China, 
+            particularly the phenomenon of the “volume trap.” I aim to pursue further studies in China to deepen my understanding of 
+            trade policy, value chain upgrading, and market strategies in one of the world’s most dynamic economies.
+          </p>
+        </div>
+        <div class="space-y-4">
+          <div class="p-5 bg-gray-50 rounded-xl">
+            <p class="text-sm text-gray-500 mb-1">Email</p>
+            <p class="font-medium break-all">nhilethao22052008@gmail.com</p>
+          </div>
+          <div class="p-5 bg-gray-50 rounded-xl">
+            <p class="text-sm text-gray-500 mb-1">Chinese Name</p>
+            <p class="font-medium">黎草儿 (Lí Cǎo’ér)</p>
+          </div>
+          <div class="p-5 bg-gray-50 rounded-xl">
+            <p class="text-sm text-gray-500 mb-1">Location</p>
+            <p class="font-medium">Ho Chi Minh City, Vietnam</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Education -->
+<section id="education" class="py-20">
+  <div class="max-w-5xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-10">Education & Achievements</h2>
+    <div class="space-y-6">
+
+      <!-- University -->
+      <div class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-md transition">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div>
+            <h3 class="text-xl font-semibold">Bachelor of International Economics & Trade</h3>
+            <p class="text-gray-500">Foreign Trade University (FTU), Vietnam</p>
+          </div>
+          <div class="text-right">
+            <p class="font-medium text-red-600">2026 – Present</p>
+            <p class="text-sm text-gray-500">Freshman</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- High School -->
+      <div class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-md transition">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div>
+            <h3 class="text-xl font-semibold">Le Quy Don Specialized High School</h3>
+            <p class="text-gray-500">Ho Chi Minh City, Vietnam</p>
+          </div>
+          <div class="text-right">
+            <p class="font-medium text-red-600">2023 – 2026</p>
+            <p class="text-sm text-gray-500">GPA: 9.38 / 10</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- IELTS -->
+      <div class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-md transition">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div>
+            <h3 class="text-xl font-semibold">IELTS Academic</h3>
+            <p class="text-gray-500">British Council</p>
+            <a href="files/ielts.pdf" target="_blank"
+               class="inline-flex items-center gap-2 text-sm text-red-600 hover:text-red-700 font-medium mt-2">
+              <i class="fa-solid fa-file-pdf"></i> View Score Report
+            </a>
+          </div>
+          <div class="text-right">
+            <p class="font-medium text-red-600">Overall 8.0</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SAT -->
+      <div class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-md transition">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div>
+            <h3 class="text-xl font-semibold">SAT</h3>
+            <p class="text-gray-500">College Board</p>
+            <a href="files/sat.pdf" target="_blank"
+               class="inline-flex items-center gap-2 text-sm text-red-600 hover:text-red-700 font-medium mt-2">
+              <i class="fa-solid fa-file-pdf"></i> View Score Report
+            </a>
+          </div>
+          <div class="text-right">
+            <p class="font-medium text-red-600">1530</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- HSK -->
+      <div class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-md transition">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div>
+            <h3 class="text-xl font-semibold">HSK Level 5</h3>
+            <p class="text-gray-500">Chinese Proficiency Test</p>
+            <a href="files/hsk5.pdf" target="_blank"
+               class="inline-flex items-center gap-2 text-sm text-red-600 hover:text-red-700 font-medium mt-2">
+              <i class="fa-solid fa-file-pdf"></i> View Score Report
+            </a>
+          </div>
+          <div class="text-right">
+            <p class="font-medium text-red-600">Passed</p>
+            <p class="text-sm text-gray-500">Score: </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CSCA-->
+      <div class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-md transition">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div>
+            <h3 class="text-xl font-semibold">China Scholastic Competency Assessment</h3>
+            <p class="text-gray-500">CSCA</p>
+          </div>
+          <div class="text-right">
+            <p class="font-medium text-red-600">Passed</p>
+            <p class="text-sm text-gray-500">Math: -Humanities Chinese:</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Award -->
+      <div class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-md transition">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div>
+            <h3 class="text-xl font-semibold">City-level Excellent Student Award</h3>
+            <p class="text-gray-500">English Subject – Ho Chi Minh City</p>
+            <a href="files/award.pdf" target="_blank"
+               class="inline-flex items-center gap-2 text-sm text-red-600 hover:text-red-700 font-medium mt-2">
+              <i class="fa-solid fa-file-pdf"></i> View Certificate
+            </a>
+          </div>
+          <div class="text-right">
+            <p class="font-medium text-red-600">3rd Prize</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Research & Experience -->
+  <section id="projects" class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-10">Research & Experience</h2>
+      
+      <div class="grid md:grid-cols-2 gap-6">
+
+        <!-- Macro Research -->
+        <div class="p-6 border border-gray-100 rounded-2xl hover:shadow-lg transition flex flex-col">
+          <div class="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center mb-4">
+            <i class="fa-solid fa-chart-line text-red-600 text-xl"></i>
+          </div>
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-xs px-2 py-0.5 bg-red-100 text-red-700 rounded-full font-medium">Macro Research</span>
+            <span class="text-xs px-2 py-0.5 bg-gray-100 text-gray-600 rounded-full">Independent</span>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">The Billion-Dollar Gap: Escaping the "Volume Trap" in Vietnam’s Agricultural Exports</h3>
+          <p class="text-gray-600 text-sm mb-4 flex-grow">
+            Independent research analyzing the structural divergence between export volume and value in Vietnam’s key agricultural commodities 
+            (cassava starch, bananas, and fresh durian) to China. Using ITC Trade Map data (2021–2025), the study identifies persistent unit-value 
+            decline and proposes strategic pathways for value capture.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="text-xs px-2 py-1 bg-gray-100 rounded">International Trade</span>
+            <span class="text-xs px-2 py-1 bg-gray-100 rounded">Agricultural Economics</span>
+            <span class="text-xs px-2 py-1 bg-gray-100 rounded">Vietnam–China</span>
+          </div>
+          <!-- Nút tải file research -->
+          <a href="files/The_Billion_Dollar_Gap.pdf" target="_blank"
+             class="inline-flex items-center gap-2 text-sm text-red-600 hover:text-red-700 font-medium">
+            <i class="fa-solid fa-file-pdf"></i> View Research Paper
+          </a>
+        </div>
+
+        <!-- Micro Research -->
+        <div class="p-6 border border-gray-100 rounded-2xl hover:shadow-lg transition flex flex-col">
+          <div class="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center mb-4">
+            <i class="fa-solid fa-leaf text-orange-600 text-xl"></i>
+          </div>
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-xs px-2 py-0.5 bg-orange-100 text-orange-700 rounded-full font-medium">Micro Research</span>
+            <span class="text-xs px-2 py-0.5 bg-gray-100 text-gray-600 rounded-full">Solution Design</span>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Eco-Lounge: An O2O & D2C Model for Value-Added Vietnamese Agriculture</h3>
+          <p class="text-gray-600 text-sm mb-4 flex-grow">
+            A Blue Ocean Strategy proposal that transforms Vietnamese agricultural products into curated consumer experiences in China. 
+            Targeting Gen Z and the Silver Economy through flagship stores and specialized booths, the model aims to shift from bulk commodity 
+            exports toward branded, higher-value offerings.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="text-xs px-2 py-1 bg-gray-100 rounded">Blue Ocean Strategy</span>
+            <span class="text-xs px-2 py-1 bg-gray-100 rounded">O2O / D2C</span>
+            <span class="text-xs px-2 py-1 bg-gray-100 rounded">Brand Equity</span>
+          </div>
+          <!-- Nút tải file pitch -->
+          <a href="files/Eco-Lounge_Pitch.pdf" target="_blank"
+             class="inline-flex items-center gap-2 text-sm text-red-600 hover:text-red-700 font-medium">
+            <i class="fa-solid fa-file-pdf"></i> View Pitch Deck
+          </a>
+        </div>
+
+        <!-- Experience -->
+      <div class="p-6 border border-gray-100 rounded-2xl hover:shadow-lg transition md:col-span-2">
+        <div class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center mb-4">
+          <i class="fa-solid fa-truck text-amber-600 text-xl"></i>
+        </div>
+        <div class="flex items-center gap-2 mb-2">
+          <span class="text-xs px-2 py-0.5 bg-amber-100 text-amber-700 rounded-full font-medium">Leadership Experience</span>
+        </div>
+        <h3 class="text-lg font-semibold mb-2">Head of Logistics – Project “Nhung Buoc Di”</h3>
+        <p class="text-gray-600 text-sm mb-4">
+          Served as Head of Logistics for the project “Nhung Buoc Di”. 
+          Responsible for planning, coordinating, and overseeing logistics operations to ensure the smooth execution of project activities.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-xs px-2 py-1 bg-gray-100 rounded">Logistics Management</span>
+          <span class="text-xs px-2 py-1 bg-gray-100 rounded">Team Leadership</span>
+          <span class="text-xs px-2 py-1 bg-gray-100 rounded">Project Coordination</span>
+        </div>
+      </div>
+      <!-- Link Facebook dự án -->
+      <a href="https://www.facebook.com/profile.php?id=61559869862162" target="_blank"
+        class="inline-flex items-center gap-2 text-sm text-blue-600 hover:text-blue-700 font-medium">
+      <i class="fa-brands fa-facebook"></i> View Project on Facebook
+     </a>
+     </div>
+</section>
+
+  <!-- Why China -->
+  <section id="why-china" class="py-20">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-8">Why do I want to study in China?</h2>
+      <div class="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-8 md:p-10">
+        <p class="text-gray-700 leading-relaxed mb-6">
+          China is Vietnam’s largest trading partner, particularly in agriculture. Through my research on the “volume trap” in Vietnamese 
+          agricultural exports, I became deeply aware of the structural challenges — declining unit values, weak brand equity, and limited 
+          value capture — that constrain Vietnam’s position in the Chinese market.
+        </p>
+        <p class="text-gray-700 leading-relaxed">
+          Studying in China will allow me to gain first-hand understanding of Chinese consumer markets, trade regulations, and value-chain 
+          dynamics. I hope to contribute to more strategic, higher-value cooperation between Vietnam and China in the years ahead.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
+      <p class="text-gray-600 mb-10 max-w-xl mx-auto">
+        If you are a university representative, scholarship provider, or simply want to connect, feel free to reach out!
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="mailto:nhilethao22052008@gmail.com" 
+           class="flex items-center gap-2 px-6 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition">
+          <i class="fa-solid fa-envelope"></i> Email
+        </a>
+        <a href="#" class="flex items-center gap-2 px-6 py-3 border border-gray-300 rounded-lg hover:border-gray-400 transition">
+          <i class="fa-brands fa-weixin text-green-600"></i> WeChat
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 border-t border-gray-100 text-center text-sm text-gray-500">
+    <p>© 2026 Le Thao Nhi (黎草儿). Portfolio for Study Abroad application.</p>
+  </footer>
+
+</body>
+</html>
